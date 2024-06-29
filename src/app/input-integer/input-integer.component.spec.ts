@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppBeerComponent } from './app-beer.component';
+import { InputIntegerComponent } from './input-integer.component';
 
-describe('AppBeerComponent', () => {
-  let component: AppBeerComponent;
-  let fixture: ComponentFixture<AppBeerComponent>;
+describe('InputIntegerComponent', () => {
+  let component: InputIntegerComponent;
+  let fixture: ComponentFixture<InputIntegerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AppBeerComponent]
+      declarations: [InputIntegerComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(AppBeerComponent);
+    fixture = TestBed.createComponent(InputIntegerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

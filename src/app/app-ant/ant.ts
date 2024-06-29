@@ -1,7 +1,7 @@
-export interface Beer{
+export interface Ant{
     id:number;
     name:string;
-    type:string;
+    description:string;
     img:string;
     price:number;
     stock:number;

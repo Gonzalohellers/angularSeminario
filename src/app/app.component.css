@@ -1,0 +1,23 @@
+
+
+.navbar{
+    background-color: rgba(27, 27, 27, 0.603) !important;
+}
+
+*{
+    color: white !important;
+}
+
+
+@media(width>1000px){
+    .sinShow{
+        display: flex !important;
+        justify-content: end;
+    }
+}
+
+ .nav-link:hover{
+    color: rgb(189, 189, 189) !important;
+ }
+
+

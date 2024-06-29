@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    color-scheme: dark !important;
+  }
+
+body{
+    background-color: rgb(20, 20, 20);
+}
+
+a{
+    color:rgb(236, 236, 236) !important;
+}
+p{
+    color:rgb(236, 236, 236) !important;
+}

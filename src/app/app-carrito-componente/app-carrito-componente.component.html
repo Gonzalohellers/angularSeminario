@@ -1,3 +1,17 @@
-<h3>Carrito De Compras</h3>
+<h3 class="text-light">Carrito De Compras</h3>
 
+<div *ngFor="let ant of Ant">
+  <div class="card bg-dark">
+    <h5 class="card-title text-light">{{ ant.name | uppercase }}</h5>
+    <div class="d-flex">
+      <img [src]="ant.img" class="card-img-top" [alt]="ant.img">
+      <div class="card-body">
+        <p class="card-text">{{ ant.description }}</p>
+        <p class="card-text">{{ ant.price | currency }}</p>
+        <p>{{quantity}}</p>
+      </div>
+    </div>
+  </div>
+</div>
 
+<h1 class="text-light">Total a pagar {{ total | currency }}</h1>

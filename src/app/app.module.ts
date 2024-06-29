@@ -1,29 +1,34 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {FormsModule} from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AppBeerComponent } from './app-beer/app-beer.component';
+import { AppAntComponent } from './app-ant/app-ant.component';
 import { AppCarritoComponenteComponent } from './app-carrito-componente/app-carrito-componente.component';
 import { BreweryAboutComponent } from './brewery-about/brewery-about.component';
-
-
+import { InputIntegerComponent } from './input-integer/input-integer.component';
+import { HomeComponent } from './home/home.component';
+import { cartServiceNewService } from './cartService-new.service';
+import { AntServiceService } from './ant-service.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppBeerComponent,
+    AppAntComponent,
     AppCarritoComponenteComponent,
-    BreweryAboutComponent
+    BreweryAboutComponent,
+    InputIntegerComponent,
+    HomeComponent
   ],
   imports: [
-    AppRoutingModule,
     BrowserModule,
-    AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    AppRoutingModule
   ],
-
-  providers: [],
+  providers: [AntServiceService, cartServiceNewService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
