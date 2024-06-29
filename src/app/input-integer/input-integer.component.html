@@ -1,5 +1,6 @@
 
-<button class="btn btn-primary btn-sm" #inputQuantity (click)="downQuantity()">-</button><input type="number" class="mw-2"
+<button class="btn btn-primary btn-sm" #inputQuantity (click)="downQuantity()">-</button>
+<input type="number" class="mw-2"
 [(ngModel)]="quantity" 
-(keyup)="verifyQuantity()" id=""><button class="btn btn-primary btn-sm" (click)="upQuantity()">+</button>
-<p>{{quantity}}</p>
+(keyup)="emitQuantityChange()" id="">
+<button class="btn btn-primary btn-sm" (click)="upQuantity()">+</button>

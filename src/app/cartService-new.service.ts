@@ -17,7 +17,7 @@ export class cartServiceNewService {
     if (!item) {
       this._items.push({...ant});
     } else {
-      item.quantity += ant.quantity;
+        item.quantity = ant.quantity;
     }
     this._itemsSubject.next([...this._items]);
   } 

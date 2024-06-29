@@ -10,8 +10,8 @@
               <h5 class="card-title text-light">{{ ant.name | uppercase }}</h5>
               <p class="card-text">{{ ant.price | currency }}</p>
               <p class="card-text">{{ ant.description }}</p>
-              <app-input-integer [quantity]="ant.quantity" [max]="ant.stock" *ngIf="ant.stock != 0"></app-input-integer>
-              <a [ngClass]="{btnDanger: ant.stock == 0}" (click)="addToCarrito(ant)" class="btn btn-primary mt-2">
+              <app-input-integer [(quantity)]="ant.quantity" [max]="ant.stock" *ngIf="ant.stock != 0"></app-input-integer>
+              <a [ngClass]="{btnDanger: ant.stock == 0}" (click)="addToCarrito(ant)" class="btn btn-primary mt-4">
                 {{ ant.stock != 0 ? 'Añadir al Carrito' : 'No hay Stock' }}
               </a>
             </div>
@@ -21,7 +21,7 @@
     </div>
 
     <div class="col-4">
-      <app-app-carrito-componente></app-app-carrito-componente>
+      <app-app-carrito-componente ></app-app-carrito-componente>
     </div>
   </div>
 </div>
